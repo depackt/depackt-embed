@@ -1,0 +1,31 @@
+{
+  "name": "depackt-embed",
+  "version": "1.0.0",
+  "description": "Embed a depackt map",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/depackt/depackt-embed.git"
+  },
+  "keywords": [
+    "leaflet",
+    "embed",
+    "depackt"
+  ],
+  "author": "Augustin Godiscal <hello@auggod.tech>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/depackt/depackt-embed/issues"
+  },
+  "homepage": "https://github.com/depackt/depackt-embed#readme",
+  "dependencies": {
+    "bankai": "^8.1.1",
+    "choo": "^6.0.0",
+    "depackt-leaflet": "git+https://github.com/depackt/depackt-leaflet.git",
+    "sheetify": "^6.1.1",
+    "xhr": "^2.4.0"
+  }
+}
