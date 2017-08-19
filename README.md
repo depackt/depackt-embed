@@ -12,35 +12,44 @@ It's easy and you don't need to setup anything. Default tiles are openstreetmap.
 
 If you want custom titles, popup template and icons. You can use depackt-leaflet module and depackt api to populate the map with locations.
 
-    $ npm install https://github.com/depackt/depackt-leaflet --save
+#### Installation
 
-    const Map = require('depackt-leaflet')
-    const map = Minimap()
+```sh
+$ npm install https://github.com/depackt/depackt-leaflet --save
+```
 
-    const mapComponent = map.render({
-      coords: {lng: 50, lat: 4},
-      zoom: 13,
-      items: [...],
-      tiles: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
-      mapbox: {},
-      tilesAttribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-      icons: [
-        {
-          name: 'default',
-          template: `
-            <div>custom icon</div>
-          `
-        },
-        {
-          name: 'featured',
-          template: `
-            <div>custom icon</div>
-          `
-        }
-      ]
-    })
+#### Example
 
-    document.body.appendChild(mapComponent)
+```js    
+const Minimap = require('depackt-leaflet')
+const minimap = Minimap()
+
+const mapComponent = minimap.render({
+  coords: {lng: 50, lat: 4},
+  zoom: 13,
+  items: [...],
+  tiles: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+  mapbox: {},
+  tilesAttribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+  icons: [
+    {
+      name: 'default',
+      template: `
+        <div>custom icon</div>
+      `
+    },
+    {
+      name: 'featured',
+      template: `
+        <div>custom icon</div>
+      `
+    }
+  ]
+})
+
+
+document.body.appendChild(mapComponent)
+```
 
 ## See also
 
