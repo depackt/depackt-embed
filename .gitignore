@@ -54,8 +54,6 @@ node_modules
 bower_components
 vendor
 
-assets
-
 ### grunt ###
 # Grunt usually compiles files inside this directory
 #dist/
